@@ -1,0 +1,163 @@
+html,
+body {
+  min-width: 290px;
+  color: #FFFFFF;
+  background-color: #0c0c28;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+header {
+  color: #1717ff;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: thin;
+}
+
+.header{
+    font-size: 2.4em;
+    color:#00ffff;
+}
+
+.main-header{
+    color:#00ffff;
+    font-size: 2em;
+}
+
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 80%;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #fff;
+  border-bottom:  1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+hr{
+    width:40%;
+    border: 3px solid;
+    padding: 2px 0 2px 0;
+    border-radius: 35%;
+}
+
+#navbar li:nth-of-type(1){
+  border-top:1px solid;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #00ffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover {
+  color: #1717ff;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #fff;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #000;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 224px;
+  }
+
+  #navbar {
+    background-color: RGB(12,12,40);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 293px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid; 
+  }
+
+  #Introduction_to_HTML{
+  padding-top: 15px;
+}
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+ #Introduction_to_HTML{
+  padding-top: 55px;
+}
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+    color:#fff;
+  }
+}
